@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding: 30px 10%;
+    justify-content: space-between;
+    background-color: rgb(186, 180, 187);
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 .6rem 1rem rgba(0,0,0,.1);
+}
+.header .logo{
+    font-size: 30px;
+    color:rgb(151, 41, 41);
+    text-decoration: none;
+    font-weight: 400px;
+}
+.header .navbar a{
+    color: black;
+    padding: 0 1.5rem;
+    font-size: 18px;
+    font-weight: 600px;
+
+}
+
+.navbar a:hover{
+    color: rgb(71, 5, 82);
+    transition: 3s;
+}
+.header .icons a{
+    font-size: 2rem;
+    color: rgb(5, 5, 5);
+    margin-left: 1.5rem;
+}
+.header .icons a:hover{
+    color: darkred;
+
+}
+.header #toggler{
+    display: none;
+}
+.header .fa-bars{
+    font-size: 2rem;
+    display:none;
+    cursor: pointer;
+    
+}
+.home{
+   min-height: 100vh;
+    display: flex;
+    background: url(82950-beautiful-blume-hintergrundbilder-1920x1080.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+.home-contant{
+    max-width: 500px;
+}
+.home-contant h1{
+    font-size: 32px;
+    font-weight: 500px;
+}
+.home-contant h2{
+    font-size: 32px;
+    font-weight: 500px;
+}
+.home-contant h2 span{
+    color: rgb(71, 5, 82);
+    font-size: 30px;
+    font-weight: 600px;
+}
+.home-contant p{
+    font-size: 20px;
+    font-weight: 300px;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background:rgb(71, 5, 82) ;
+    color: white;
+    border-radius: 5rem;
+    padding: 1rem 0.5rem;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn:hover{
+    background: rgb(134, 110, 110);
+}
+.about{
+    min-height: 100vh;
+     display: flex;
+     background: url("about\ image.jpeg") no-repeat;
+     background-size: cover;
+     background-position: center;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 10%;
+ }
+ .about-contant{
+    max-width: 500px;
+}
+.about-contant h1{
+    font-size: 32px;
+    font-weight: 500px;
+}
+.about-contant h3{
+    font-size: 32px;
+    font-weight: 500px;
+}
+.about-contant h1 span{
+    color: rgb(71, 5, 82);
+    font-size: 30px;
+    font-weight: 600px;
+}
+.about-contant p{
+    font-size: 20px;
+    font-weight: 300px;
+}
+
+.products-content span{
+    color: rgb(71, 5, 82); 
+}
+
+
+.products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+.products .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: 5rem;
+    border: 1rem solid rgba(0,0,0,.1);
+    position: relative;
+}
+.products .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+    
+
+    
+}
+.products .box-container .box .image img{
+    height: 20rem;
+    
+
+}
+.products .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+.products .box-container .box .image img .icons{
+    position: absolute;
+    bottom: 0; left: 0;right: 0;
+    display: flex;
+}
+.products .box-container .box .image img .icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width: 50%;
+    background: var(--pink);
+    color: aliceblue;
+}
+.products h1{
+    font-size: 42px;
+    font-weight: 600px;
+    align-items: center;
+    padding-left: 40%;
+
+}
+.contact{
+    min-height: 100vh;
+    background:url(contact-image.jpg)no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+    padding: 50px;
+    text-align: center;
+}
+.contact-container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.contact-container h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+    color:rgb(71, 5, 82) ;
+}
+.form-group{
+    margin-bottom: 20px;
+
+}
+input,textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius:8px;
+    border: none;
+
+}
+input:focus,
+textarea:focus{
+    outline: none;
+    box-shadow: 0 0 8px palevioletred;
+}
+button{
+    display: inline;
+    padding: 12px 24px;
+    background-color: pink;
+    border: none;
+    color: rgb(71, 5, 82) ;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(90, 18, 60);
+    transition: 3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*media queries*/
+@media (max-width:991px){
+
+.header {
+    padding: 2rem;
+}
+section{
+    padding: 2rem;
+}
+.home{
+    background-position: left;
+}
+
+
+}
+
+
+@media(max-width:768px){
+
+    .header .fa-bars{
+        display: block;
+    }
+    .header .navbar{
+        position:absolute;
+        top:100%; left:0; right:0;
+        background: whitesmoke;
+        border-top: 1rem solid rgba(0,0,0,.1);
+    }
+    .header .navbar a{
+        margin: 1.5rem;
+        padding:1.5rem;
+        background: whitesmoke;
+        border: 1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+}
+@media(max-width:450px){
+    html{
+        
+        font-size: 50%;
+        
+}
+}
